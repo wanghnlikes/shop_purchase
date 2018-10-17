@@ -1,0 +1,9 @@
+server:
+  port: 8094
+  #需要指明spring.application.name这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
+spring:
+  application:
+    name: feign-service
+feign:
+  hystrix:
+    enabled: true
